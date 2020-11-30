@@ -1,6 +1,6 @@
 export interface IGILLookupsBySex {
-  male: IGILLookups,
-  female: IGILLookups
+  Male: IGILLookups,
+  Female: IGILLookups
 }
 
 export interface IGILLookups {
@@ -394,8 +394,8 @@ export interface IGLICoefficients {
 }
 
 export interface IGLICoefficientsBySex {
-  male: IGLICoefficients,
-  female: IGLICoefficients
+  Male: IGLICoefficients,
+  Female: IGLICoefficients
 }
 
 export interface IGLIFunctionResults {
@@ -442,11 +442,11 @@ export function GLIFunction(coefficients: IGLICoefficientsBySex, lookups: IGILLo
 } 
 
 // @TODO is there a way to avoid this duplication so the runtime has access?
-export const sexes = ["male", "female"];
-export type sex = "male" | "female"
+export const sexes = ["Male", "Female"];
+export type sex = "Male" | "Female"
 
-export const ethnicities = ["White", "AfrAm", "NEAsia", "SEAsia", "Other"];
-export type ethnicity = "White" | "AfrAm" | "NEAsia" | "SEAsia" | "Other";
+export const ethnicities = ["Caucasian", "AfrAm", "NEAsia", "SEAsia", "Other"];
+export type ethnicity = "Caucasian" | "AfrAm" | "NEAsia" | "SEAsia" | "Other";
 
 export function findIndex(age: number): keyof IGILLookups {
   if (age % 0.25 === 0) {

@@ -1,6 +1,6 @@
 {
   "name": "@automate-medical/gli2012",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Continuous prediction equations for spirometric indices",
   "module": "dist/index.js",
   "scripts": {

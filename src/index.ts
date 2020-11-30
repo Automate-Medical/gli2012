@@ -5,7 +5,7 @@ import { fev1Lookups } from './lookups/fev1';
 import { sex, ethnicity, IGLICoefficientsBySex, GLIFunction, IGLIFunction } from './util';
 
 const fvcCoefficients: IGLICoefficientsBySex = {
-  male: {
+  Male: {
     q0: 0.9481,
     q1: 0,
     a0: -11.2281,
@@ -22,7 +22,7 @@ const fvcCoefficients: IGLICoefficientsBySex = {
     p4: 0.0325,
     p5: -0.0503
   },
-  female: {
+  Female: {
     q0: 0.8236,
     q1: 0,
     a0: -10.4030,
@@ -46,7 +46,7 @@ export const fvc: IGLIFunction = function({ age, sex, height, ethnicity, measure
 }
 
 const fev1fvcCoefficients: IGLICoefficientsBySex = {
-  male: {
+  Male: {
     q0: 4.7101,
     q1: -0.6774,
     a0: 0.7403,
@@ -63,7 +63,7 @@ const fev1fvcCoefficients: IGLICoefficientsBySex = {
     p4: -0.1414,
     p5: -0.086
   },
-  female: {
+  Female: {
     q0: 7.032,
     q1: -1.197,
     a0: 0.550559,
@@ -87,7 +87,7 @@ export const fev1fvc: IGLIFunction = function({ age, sex, height, ethnicity, mea
 }
 
 const fev1Coefficients: IGLICoefficientsBySex = {
-  male: {
+  Male: {
     q0: 0.886600,
     q1: 0.085000,
     a0: -10.3420,
@@ -104,7 +104,7 @@ const fev1Coefficients: IGLICoefficientsBySex = {
     p4: 0.0327,
     p5: 0.0114
   },
-  female: {
+  Female: {
     q0: 1.1540,
     q1: 0,
     a0: -9.6987,

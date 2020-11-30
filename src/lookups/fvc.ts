@@ -1,7 +1,7 @@
 import { IGILLookupsBySex } from "../util";
 
 export const fvcLookups: IGILLookupsBySex = {
-  male: {
+  Male: {
     3: [0,-0.0938,0.2986],
     3.25: [0,-0.0888,0.2785],
     3.5: [0,-0.0836,0.2598],
@@ -372,7 +372,7 @@ export const fvcLookups: IGILLookupsBySex = {
     94.75: [0,-0.4262,0.3019],
     95: [0,-0.4283,0.3033]
   },
-  female: {
+  Female: {
     3: [0,-0.1940,0.3694],
     3.25: [0,-0.1824,0.3431],
     3.5: [0,-0.1717,0.3186],
