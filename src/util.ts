@@ -408,7 +408,7 @@ export interface IGLIFunctionResults {
 }
 
 export interface IGLIFunction {
-  (age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number): IGLIFunctionResults;
+  ({ age, sex, height, ethnicity, measured}: { age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number }): IGLIFunctionResults;
 }
 
 export function GLIFunction(coefficients: IGLICoefficientsBySex, lookups: IGILLookupsBySex, age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number): IGLIFunctionResults {

@@ -41,7 +41,7 @@ const fvcCoefficients: IGLICoefficientsBySex = {
   }
 }
 
-export const fvc: IGLIFunction = function(age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number) {
+export const fvc: IGLIFunction = function({ age, sex, height, ethnicity, measured }) {
   return GLIFunction(fvcCoefficients, fvcLookups, age, sex, height, ethnicity, measured);
 }
 
@@ -82,7 +82,7 @@ const fev1fvcCoefficients: IGLICoefficientsBySex = {
   }
 }
 
-export const fev1fvc: IGLIFunction = function(age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number) {
+export const fev1fvc: IGLIFunction = function({ age, sex, height, ethnicity, measured }) {
   return GLIFunction(fev1fvcCoefficients, fev1fvcLookups, age, sex, height, ethnicity, measured);
 }
 
@@ -123,6 +123,6 @@ const fev1Coefficients: IGLICoefficientsBySex = {
   }
 }
 
-export const fev1: IGLIFunction = function(age: number, sex: sex, height: number, ethnicity: ethnicity, measured: number) {
+export const fev1: IGLIFunction = function({ age, sex, height, ethnicity, measured }) {
   return GLIFunction(fev1Coefficients, fev1Lookups, age, sex, height, ethnicity, measured);
 }
